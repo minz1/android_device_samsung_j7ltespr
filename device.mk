@@ -14,35 +14,35 @@
 #
 
 # Also get non-open-source specific aspects if available
-$(call inherit-product, vendor/samsung/o7prolte/o7prolte-vendor.mk)
+$(call inherit-product, vendor/samsung/a8eltezh/a8eltezh-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # Device overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/o7prolte/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/a8eltezh/overlay
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/samsung/o7prolte/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/samsung/o7prolte/configs/audio/acdb/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
-    device/samsung/o7prolte/configs/audio/acdb/General_cal.acdb:system/etc/General_cal.acdb \
-    device/samsung/o7prolte/configs/audio/acdb/Global_cal.acdb:system/etc/Global_cal.acdb \
-    device/samsung/o7prolte/configs/audio/acdb/Handset_cal.acdb:system/etc/Handset_cal.acdb \
-    device/samsung/o7prolte/configs/audio/acdb/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
-    device/samsung/o7prolte/configs/audio/acdb/Headset_cal.acdb:system/etc/Headset_cal.acdb \
-    device/samsung/o7prolte/configs/audio/acdb/Speaker_cal.acdb:system/etc/Speaker_cal.acdb
+    device/samsung/a8eltezh/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/samsung/a8eltezh/configs/audio/acdb/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
+    device/samsung/a8eltezh/configs/audio/acdb/General_cal.acdb:system/etc/General_cal.acdb \
+    device/samsung/a8eltezh/configs/audio/acdb/Global_cal.acdb:system/etc/Global_cal.acdb \
+    device/samsung/a8eltezh/configs/audio/acdb/Handset_cal.acdb:system/etc/Handset_cal.acdb \
+    device/samsung/a8eltezh/configs/audio/acdb/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
+    device/samsung/a8eltezh/configs/audio/acdb/Headset_cal.acdb:system/etc/Headset_cal.acdb \
+    device/samsung/a8eltezh/configs/audio/acdb/Speaker_cal.acdb:system/etc/Speaker_cal.acdb
 	
 # Media Profiles
 PRODUCT_COPY_FILES += \
-    device/samsung/o7prolte/configs/media/media_codecs.xml:system/etc/media_codecs.xml \
-    device/samsung/o7prolte/configs/media/media_profiles.xml:system/etc/media_profiles.xml
+    device/samsung/a8eltezh/configs/media/media_codecs.xml:system/etc/media_codecs.xml \
+    device/samsung/a8eltezh/configs/media/media_profiles.xml:system/etc/media_profiles.xml
 
 # Ril Qmi Config
-PRODUCT_COPY_FILES += device/samsung/o7prolte/configs/data/dsi_config.xml:system/etc/data/dsi_config.xml
-PRODUCT_COPY_FILES += device/samsung/o7prolte/configs/data/netmgr_config.xml:system/etc/data/netmgr_config.xml
-PRODUCT_COPY_FILES += device/samsung/o7prolte/configs/data/qmi_config.xml:system/etc/data/qmi_config.xml 
+PRODUCT_COPY_FILES += device/samsung/a8eltezh/configs/data/dsi_config.xml:system/etc/data/dsi_config.xml
+PRODUCT_COPY_FILES += device/samsung/a8eltezh/configs/data/netmgr_config.xml:system/etc/data/netmgr_config.xml
+PRODUCT_COPY_FILES += device/samsung/a8eltezh/configs/data/qmi_config.xml:system/etc/data/qmi_config.xml 
 
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
@@ -52,11 +52,11 @@ ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
-    device/samsung/o7prolte/keylayout/Generic.kl:system/usr/keylayout/Generic.kl
+    device/samsung/a8eltezh/keylayout/Generic.kl:system/usr/keylayout/Generic.kl
 
 # Shims for Camera
 PRODUCT_PACKAGES += libshim_camera
-PRODUCT_COPY_FILES += device/samsung/o7prolte/rootdir/init.shims.rc:root/init.shims.rc
+PRODUCT_COPY_FILES += device/samsung/a8eltezh/rootdir/init.shims.rc:root/init.shims.rc
 
 #Shims for libwvm
 PRODUCT_PACKAGES += libshim_wvm

@@ -46,10 +46,10 @@ void vendor_load_properties()
     std::string bootloader = property_get("ro.bootloader");
 
         /* SM-G600FY */
-        property_set("ro.build.fingerprint", "samsung/o7proltedd/o7prolte:6.0.1/MMB29M/G600FYDDU1BQA1:user/release-keys");
-        property_set("ro.build.description", "o7proltedd-user 6.0.1 MMB29M G600FYDDU1BQA1 release-keys");
-        property_set("ro.product.model", "SM-G600FY");
-        property_set("ro.product.device", "o7prolte");
+        property_set("ro.build.fingerprint", "samsung/a8eltezhdd/a8eltezh:6.0.1/MMB29M/G8000YDDU1BQA1:user/release-keys");
+        property_set("ro.build.description", "a8eltezhdd-user 6.0.1 MMB29M G600FYDDU1BQA1 release-keys");
+        property_set("ro.product.model", "SM-A8000");
+        property_set("ro.product.device", "a8eltezh");
 
         init_dsds();
 

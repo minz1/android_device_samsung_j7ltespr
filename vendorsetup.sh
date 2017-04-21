@@ -1,2 +1,2 @@
-add_lunch_combo lineage_o7prolte-userdebug
-add_lunch_combo lineage_o7prolte-eng
+add_lunch_combo lineage_a8eltezh-userdebug
+add_lunch_combo lineage_a8eltezh-eng

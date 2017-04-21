@@ -1,2 +1,2 @@
-# android_device_samsung_o7prolte 
-Device tree for Samsung Galaxy On7 and On7 pro
+# android_device_samsung_a8eltezh
+Device tree for Samsung Galaxy A8 (SM-A8000)

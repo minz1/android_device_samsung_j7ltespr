@@ -159,7 +159,7 @@ EOF
 LOCAL_PATH := \$(call my-dir)
 
 ifeq (\$(BOARD_VENDOR),samsung)
-ifneq (\$(filter o7prolte,\$(TARGET_DEVICE)),)
+ifneq (\$(filter a8eltezh,\$(TARGET_DEVICE)),)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
