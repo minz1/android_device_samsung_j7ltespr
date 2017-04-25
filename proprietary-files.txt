@@ -61,7 +61,6 @@ lib/libsavsvc.so
 lib/lib_PreGainBooster_ver105.so
 lib/libdmcFaceEngine.so
 lib/libsfextmp4f.so
-lib/libMcClient.so
 lib/libsomxamrd.so
 lib/libsecfips.so
 lib/libloc_core.so
@@ -93,7 +92,6 @@ lib/libsecjpegquram.so
 lib/libsomxcmn.so
 lib/libsavscmn.so
 lib/libdirencryption.so
-lib/libAl_Awb_Sp.so
 lib/libsecimaging.so
 lib/libterrier.so
 lib/libsec_ecryptfs.so
@@ -106,29 +104,23 @@ lib/libsavsff.so
 lib/libsomxvp8d.so
 lib/libjpega.so
 lib/libsfextmkv.so
-lib/libfilterpack_facedetect.so
-lib/libMcRegistry.so
 lib/libpalmMobileDetectorFull.so
-lib/libawb_algo_front_al.so
 lib/libaec_algo_rear.so
-lib/libvtstack.so
 lib/libgps.utils.so
 lib/libexifa.so
 lib/libbt-aptX-ARM-4.2.2.so
-lib/libAl_Awb.so
-lib/libmmcamera_cac2_lib_13M.so
+lib/libmmcamera_cac2_lib.so
 lib/libsomxnaace.so
 lib/hw/sensors.msm8916.so
 lib/hw/gps.default.so
 lib/hw/camera.msm8916.so:lib/hw/camera.vendor.msm8916.so
-lib/libawb_algo_rear_al.so
-lib/libcommonpawrapper.so
+lib/libawb_algo_front.so
+lib/libawb_algo_rear.so
 lib/libsomxaacd.so
 lib/libbt-codec_aptx.so
 lib/libsomxhevcdsw.so
 lib/libhdcp2.so
 lib/libarcsoft_selfie_camera_lite.so
-lib/libgdmcprov.so
 lib/libphotoeditorEngine.so
 lib/libCryptionkey.so
 lib/libmmcamera2_stats_algorithm.so
@@ -140,7 +132,6 @@ lib/libface.so
 lib/libsfextcmn.so
 lib/libsecmediarecorder_jni.so
 lib/libseccamera_jni.so
-lib/libvtmanager.so
 lib/libsomxaace.so
 lib/libnvaccessor_fb.so
 lib/libsxqk_skia.so
@@ -207,9 +198,6 @@ lib/libsecril-client.so
 lib/libsec-ril-dsds.so
 tima_measurement_info
 
-#Ims related stuff
-lib/libims_engine.so
-
 #Vendor
 vendor/bin/audioflacapp
 vendor/bin/RIDLClient.exe
@@ -259,7 +247,6 @@ vendor/lib/lib-sec-disp.so
 vendor/lib/libC2D2.so
 vendor/lib/libCB.so
 vendor/lib/libCommandSvc.so
-vendor/lib/drm
 vendor/lib/drm/libdrmprplugin.so
 vendor/lib/libExtendedExtractor.so
 vendor/lib/libFlacSwDec.so
