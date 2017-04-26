@@ -161,8 +161,6 @@ etc/firmware/cpp_firmware_v1_4_0.fw
 etc/firmware/ice40.bin
 etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
-etc/firmware/wcd9306/wcd9306_anc.bin
-etc/firmware/wcd9306/wcd9306_mbhc.bin
 etc/firmware/wlan/prima/grippower.info
 
 lib/libchromatix_s5k3p3sx_common.so
