@@ -54,12 +54,9 @@ ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
 PRODUCT_COPY_FILES += \
     device/samsung/a8eltezh/keylayout/Generic.kl:system/usr/keylayout/Generic.kl
 
-# Shims for Camera
-PRODUCT_PACKAGES += libshim_camera
-PRODUCT_COPY_FILES += device/samsung/a8eltezh/rootdir/init.shims.rc:root/init.shims.rc
-
 #Shims for libwvm
 PRODUCT_PACKAGES += libshim_wvm
+PRODUCT_COPY_FILES += device/samsung/a8eltezh/rootdir/init.shims.rc:root/init.shims.rc
 
 # Inherit from msm8916-common
 $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
