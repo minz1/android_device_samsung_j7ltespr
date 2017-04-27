@@ -60,6 +60,7 @@ TARGET_OTA_ASSERT_DEVICE := j7ltespr,SM-J700P,J700P
 # Kernel
 TARGET_KERNEL_CONFIG := msm8929_sec_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := msm8929_sec_j7_spr_defconfig
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
