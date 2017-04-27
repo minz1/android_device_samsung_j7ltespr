@@ -1,2 +1,3 @@
-add_lunch_combo lineage_a8eltezh-userdebug
-add_lunch_combo lineage_a8eltezh-eng
+for i in eng userdebug user; do
+	add_lunch_combo lineage_j7ltespr-${i}
+done

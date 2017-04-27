@@ -1,14 +1,20 @@
 [
   {
     "remote":     "github",
-    "repository": "j5-Dev-Stable/android_device_samsung_j5-common",
-    "target_path": "device/samsung/j5-common",
+    "repository": "MSM8916-Samsung-CAF/android_device_samsung_msm8916-common",
+    "target_path": "device/samsung/msm8916-common",
     "branch":     "cm-14.1"
   },
   {
     "remote": "github",
-    "repository": "j5-Dev-Stable/proprietary_vendor_samsung_j5ltexx",
-    "target_path": "vendor/samsung/j5ltexx",
+    "repository": "MSM8916-Samsung-CAF/android_kernel_msm8916",
+    "target_path": "kernel/samsung/msm8916",
+    "branch": "cm-14.1"
+  },
+  {
+    "remote": "github",
+    "repository": "MSM8916-Samsung-CAF/proprietary_vendor_samsung_j7ltespr",
+    "target_path": "vendor/samsung/j7ltespr",
     "branch": "cm-14.1"
   }
 ]

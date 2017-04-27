@@ -24,13 +24,10 @@
 -include device/samsung/msm8916-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
--include vendor/samsung/a8eltezh/BoardConfigVendor.mk
-
-# Audio
-AUDIO_FEATURE_SAMSUNG_DUAL_SIM := true
+-include vendor/samsung/j7ltespr/BoardConfigVendor.mk
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/a8eltezh/configs/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/j7ltespr/configs/bluetooth
 
 # Radio
 SIM_COUNT := 2
@@ -44,7 +41,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 7992600000
 BOARD_PERSISTIMAGE_PARTITION_SIZE := 8388608
 BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5016350720
-#(5016367104-16384= 5016350720 bytes)
 
 # Enable dex-preoptimization to speed up the first boot sequence
 # of an SDK AVD. Note that this operation only works on Linux for now
@@ -59,16 +55,16 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := a8eltezh,SM-A8000,A8000
+TARGET_OTA_ASSERT_DEVICE := j7ltespr,SM-J700P,J700P
 
 # Kernel
-TARGET_KERNEL_CONFIG := msm8939_sec_defconfig
-TARGET_KERNEL_VARIANT_CONFIG :=msm8939_sec_a8_chnopen_defconfig
+TARGET_KERNEL_CONFIG := msm8916_sec_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8929_sec_j7_spr_defconfig
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_a8eltezh
-TARGET_RECOVERY_DEVICE_MODULES := libinit_a8eltezh
+TARGET_INIT_VENDOR_LIB := libinit_j7ltespr
+TARGET_RECOVERY_DEVICE_MODULES := libinit_j7ltespr
 
 # Keys
 PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/keyboards/Generic.kl:system/usr/keylayout/Generic.kl , $(PRODUCT_COPY_FILES))

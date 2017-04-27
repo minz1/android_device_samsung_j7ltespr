@@ -1,3 +1,9 @@
+<!--
+     Netmgr Module configuration XML file
+     Copyright (c) 2013, 2015 Qualcomm Technologies, Inc.  All Rights Reserved.
+     Qualcomm Technologies Proprietary and Confidential.
+-->
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- QMI configuration -->
@@ -7,6 +13,10 @@
    <listitem name = "msm">
 
       <!-- Flow Control -->
+      <data name="tc_ul_baserate" type="int"> 0 </data>
+      <data name="dynamic_tc_ul_baserate" type="int"> 0 </data>
+      <data name="qos_via_idl" type="int"> 0 </data>
+
       <data name="qmi_dpm_enabled" type="int"> 0 </data>
       <data name="wda_data_format_enabled" type="int"> 0 </data>
 
@@ -1036,10 +1046,6 @@
 
    <!-- MSM8996 parameters -->
    <listitem name = "msm8996">
-
-      <data name="tc_ul_baserate" type="int"> 0 </data>
-      <data name="dynamic_tc_ul_baserate" type="int"> 0 </data>
-      <data name="qos_via_idl" type="int"> 0 </data>
 
       <data name="qmi_dpm_enabled" type="int"> 1 </data>
       <!-- use qmuxd in MSM8996 for Hero -->

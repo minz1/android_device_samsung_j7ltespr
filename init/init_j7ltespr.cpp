@@ -1,5 +1,6 @@
 /*
-   Copyright (c) 2013, The Linux Foundation. All rights reserved.
+   Copyright (c) 2016, The Linux Foundation. All rights reserved.
+
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -12,6 +13,7 @@
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
+
    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
@@ -26,18 +28,14 @@
  */
 
 #include <stdlib.h>
+#include <stdio.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
 #include "log.h"
 #include "util.h"
 
-void init_dsds() {
-    property_set("ro.multisim.simslotcount", "2");
-    property_set("persist.radio.multisim.config", "dsds");
-}
-
-void vendor_load_properties()
+void init_target_properties()
 {
     std::string platform = property_get("ro.board.platform");
     if (platform != ANDROID_TARGET)
@@ -45,13 +43,11 @@ void vendor_load_properties()
 
     std::string bootloader = property_get("ro.bootloader");
 
-        /* SM-G600FY */
-        property_set("ro.build.fingerprint", "samsung/a8eltezhdd/a8eltezh:6.0.1/MMB29M/G8000YDDU1BQA1:user/release-keys");
-        property_set("ro.build.description", "a8eltezhdd-user 6.0.1 MMB29M G600FYDDU1BQA1 release-keys");
-        property_set("ro.product.model", "SM-A8000");
-        property_set("ro.product.device", "a8eltezh");
-
-        init_dsds();
+    property_set("ro.build.fingerprint", "samsung/j7ltespr/j7ltespr:6.0.1/MMB29M/J700PVPS1AQA2:user/release-keys");
+    property_set("ro.build.description", "j7ltespr-user 6.0.1 MMB29M J700PVPS1AQA2 release-keys");
+    
+    property_set("ro.product.model", "SM-J700P");
+    property_set("ro.product.device", "j7ltespr");
 
     std::string device = property_get("ro.product.device");
     INFO("Found bootloader id %s setting build properties for %s device\n", bootloader.c_str(), device.c_str());
